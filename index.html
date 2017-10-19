@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    
+	<title>大数据月比赛</title>
+	<link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="dist/bundle.js"></script>
+	<script type="text/javascript" src="JS/checked.js"></script>
+	<script type="text/javascript" src="JS/checkbok.js"></script>
+</head>
+<body class="body-container">
+	<nav id="navbar-container" class="navbar navbar-inverse navbar-fixed-top cins_navbar_head" role="navigation">
+		<div class="container-fluid" id="cins_container"> 
+			<div class="col-md-4">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+							data-target="#example-navbar-collapse">
+						<span class="sr-only">切换导航</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">CINS实验室</a>
+				</div>
+			</div>
+			<div class="col-md-2"></div>
+			<div class="col-md-6">
+				<div class="collapse navbar-collapse" id="example-navbar-collapse">
+					<ul class="nav navbar-nav navbar-nav-ul">
+						<li class="cins_li click cins_homePage"><a href="#">首页</a></li>
+						<li class="click introduce"><a href="#introduce">团队介绍</a></li>
+						<li class="click match"><a href="#matching">比赛题目</a></li>
+						<li class="click rank"><a href="#ranking">排行榜</a></li>
+						<li class="dropdown click">
+							<a href="register.html" class="dropdown-toggle" data-toggle="dropdown">
+								<span class="glyphicon glyphicon-user">
+									
+								</span>&nbsp;&nbsp;
+								<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+								<li class="click" onclick="document.getElementById('invite').style.display = 'block'"><a href="#invite">
+									<span class="glyphicon glyphicon-user">
+									
+									</span>&nbsp;&nbsp;邀请成员
+									</a>
+								</li>
+								<li class="click"><a href="register.html">
+								<span class="glyphicon glyphicon-user">
+									
+								</span>&nbsp;&nbsp;注册 
+							</a>
+								</li>								
+							</ul>
+						</li>
+						<li class="click login" onclick="document.getElementById('log').style.display = 'block'">
+							<a href="#login">
+								<span class="glyphicon glyphicon-log-in">
+									
+								</span>&nbsp;&nbsp;登录
+							</a>
+						</li>					
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<main>
+		<div class="video-container">
+			<div class="banner cndns-banner">
+				<video id="myVideo" src="video/video.mp4" width="100%" autoplay="autoplay" loop="loop" muted="muted" class="cndns-banner-video hidden-xs">您的浏览器不支持 video 标签。</video>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="spinner"></div>
+							<div class="spinner2"></div>
+							<div class="spinner3"></div>
+							<div class="spinner4"></div>
+							<div class="spinner5"></div>
+							<div class="spinner6"></div>
+							<div class="schbox clearfix">
+								<div class="col-md-8 col-sm-12 col-xs-12 col-md-offset-2">
+									<div class="desc">
+										<h2>西南石油大学创数据团队招新啦！！！</h2>
+										<p>
+											人类进入ZB时代，需要更多的大数据人才挖掘数据海洋的金矿（1ZB=10亿GB数据）
+											<br /> Java核心/Java9语言新特性/Linux/MySQL/大数据开发技术/大数据分析
+											<br/>大数据可视化/实操案例等
+										</p>
+										<a class="more-link" href="#" target="_blank">加入我们&nbsp;&nbsp;<span>&gt;</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+		<div class="col-md-12 introduce-container" id="introduce">
+			<h2>认识创数据团队</h2>
+		</div>
+		<div class="list-introduce col-md-12">
+			<div class="col-md-6 left-container">
+					<img src="images/bigdata.jpg">
+				</div>
+				<div class="col-md-6 right-container">
+					<a href="#">创数据团队介绍</a>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat dolorum consequatur quod aliquid, suscipit itaque harum, modi voluptatem neque! Expedita</p>
+					<p>Lorem ipsum dolor ut adipisci in vero ad aut doloribus molestias voluptates tempore tempora ullam cumque minus id, odio magni! Sapiente, optio mollitia sint nobis esse. Hic quisquam laudantium cum asperiores delectus</p>	
+					<a class="contant" href="#">加入我们</a>
+				</div>	
+		</div>
+		<div class="col-md-12 match-container" id="matching">
+			<h2>比赛题目</h2>
+		</div>	
+		<div class="col-md-12 list-match">
+			<div class="link">
+				<a href="#">题目下载</a>
+			</div>
+		</div>			
+		<div class="col-md-12 ranking-container" id="ranking">
+			<h2>排行榜</h2>
+		</div>
+		
+		<div class="col-md-12 ranking-list">
+			<table class="table table-hover table-container">
+				<tr class="first-list">
+			      <th>排名</th>
+			      <th>团队logo</th>
+			      <th>队名</th>
+			      <th>最近一次提交得分</th>
+			      <th>最高得分</th>
+			      <th>提交次数</th>
+			      <th>最后提交时间</th>
+			    </tr>
+				<tr>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			    </tr>			    
+			</table>
+		</div>
+	</main>	
+	<footer>
+		<div class="col-md-12 footer-container">
+			<p>cinscins</p>
+		</div>
+	</footer>
+	<div id="log">
+	        <h3 >请登录</h3>
+	        <div class="form-group">
+	            <label for="username">用户名*</label>
+	            <span id="user"  class="error"> </span>
+	            <input type="text" class="form-control"  name="username"
+	                   id="username" placeholder="用户名" onblur='checkName()' required />
+	        </div>
+	        <div class="form-group">
+	            <label for="password">密码*</label>
+	            <span id="psword" class="error"> </span>
+	            <input type="password" class="form-control" name="password" id="password" placeholder="密码" onblur='checkPassword()' required />
+	        </div>
+			<div class="form-group">
+	            <input type="pictures" class="form-control" name="pictures" id="pictures" onblur='' required />
+	            <input type="pictures" name="pictures" id="picture" onblur='' required disabled="disabled" />
+	        </div>	
+	        <p class="text-success"><a href="register.html">&gt;&gt;还没账号？去注册</a></p>        
+	        <input type="submit" class="btn btn-primary login-button loginOUt" id="loginOut" value="登录" onclick="loginClick()" />
+
+	    <div id="close" >
+	        <span onclick="document.getElementById('log').style.display='none'">×</span>
+	    </div>
+	</div>
+	<div id="invite">
+			<h3>邀请成员</h3>
+			<div class="form-group">
+				<label for="groupName">队伍名称*</label>
+	            <span id="groupName"  class="error"> </span>
+	            <input type="text" class="form-control"  name="groupsName"
+	                   id="groupsName" placeholder="队伍名称" onblur='' required />				
+			</div>			
+			<div class="form-group">
+				<label for="memberName">成员姓名*</label>
+	            <span id="memberName"  class="error"> </span>
+	            <input type="text" class="form-control"  name="membersName"
+	                   id="membersName" placeholder="成员姓名" onblur='' required />				
+			</div>
+			 <input type="submit" class="btn btn-primary login-button sure" id="sure" value="确定" />
+ 		<div id="closeGroup" >
+	        <span onclick="document.getElementById('invite').style.display='none'">×</span>
+	    </div>		
+	</div>
+	<script type="text/javascript" src="JS/loginClick.js"></script>
+</body>
+</html>

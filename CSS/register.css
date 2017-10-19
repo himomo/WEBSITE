@@ -1,0 +1,51 @@
+.cndns-banners {
+	overflow: hidden;
+	position: relative;
+	background-color: #000;
+}
+			
+.cndns-banner-video {
+	position: absolute;
+	left: 0;
+	bottom: 0px;
+	filter: alpha(opacity=80);
+	-moz-opacity: 0.8;
+	opacity: 0.8;
+}
+
+video {
+	-webkit-font-smoothing: antialiased;
+}
+
+
+#register {
+	color: #fff;
+	margin-top: 30px;
+}
+
+#register h3 {
+	width: 100%;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #3ca5f6;	
+}
+
+.text-success a {
+	color: #fff;
+}
+
+.text-success a:hover {
+	color: #3ca5f6;
+}
+
+.error {
+	float: right;
+	color: red;
+	font-size: 16px;
+	margin-right: 10px;
+}
+
+.btn {
+	width: 70px;
+	height: 40px;	
+	float: right;
+}

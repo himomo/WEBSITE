@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    
+	<title>用户注册</title>
+	<link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="dist/bundle.js"></script>	
+	<script type="text/javascript" src="JS/checked.js"></script>
+</head>
+<body>
+	<nav>
+		<div class="video-container">
+			<div class="banner cndns-banners" id="cndns-banner">
+				<video id="myVideo" src="video/video.mp4" width="100%" autoplay="autoplay" loop="loop" muted="muted" class="cndns-banner-video hidden-xs">您的浏览器不支持 video 标签。</video>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="spinner"></div>
+							<div class="spinner2"></div>
+							<div class="spinner3"></div>
+							<div class="spinner4"></div>
+							<div class="spinner5"></div>
+							<div class="spinner6"></div>
+							<div class="schbox clearfix">
+								<div class="col-md-8 col-sm-12 col-xs-12 col-md-offset-2">
+									<div id="register">
+								 		<form  action="index.html" method="post">
+									        <h3 >用户注册...</h3>
+									        <div class="form-group">
+									            <label for="otherusername">用户名*</label>
+									            <span id="otheruser"  class="error"> </span>
+									            <input type="text" class="form-control"  name="otherusername"
+									                   id="otherusername" placeholder="用户名" onblur='checkUserName()' required />
+									        </div>
+																				        
+									        <div class="form-group">
+									            <label for="otherpassword">密码*</label>
+									            <span id="otpsword" class="error"> </span>
+									            <input type="otherpassword" class="form-control" name="otherpassword" id="otherpassword" placeholder="密码" onblur='checkOtherPassword()' required />
+									        </div>
+											<div class="form-group">
+									            <label for="qrpassword">确认密码*</label>
+									            <span id="qrpsword" class="error"> </span>
+									            <input type="qrpassword" class="form-control" name="qrpassword" id="QRPassword" placeholder="请确认密码" onblur='checkQRPassword()' required />
+									        </div>									        
+ 											<div class="form-group">
+									            <label for="schoolNumber">学号*</label>
+									            <span id="schoolNumber" class="error"> </span>
+									            <input type="text" class="form-control" name="schoolNumber" id="number" placeholder="学号" onblur='checkNumber()' required />
+									        </div>
+											<div class="form-group">
+									            <label for="grade">专业年级*</label>
+									            <span id="grade" class="error"> </span>
+									            <input type="text" class="form-control" name="grade" id="margin" placeholder="专业年级" onblur='checkGrade()' required />
+									        </div>									        
+											<div class="form-group">
+									            <label for="mail">邮箱*</label>
+									            <span id="mail" class="error"> </span>
+									            <input type="text" class="form-control"  name="mail"
+									                   id="email" placeholder="邮箱" onblur='checkMail()' required />
+									        </div>
+									        <input type="submit" class="btn btn-primary login-button" value="注册"/>
+									        <p class="text-success"><a href="index.html">&gt;&gt;已有账号？去登录</a></p>
+
+									    </form>										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</nav>
+</body>
+</html>
